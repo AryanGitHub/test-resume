@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .resume_div {
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+
+            aspect-ratio: 1/1.4142;
+
+
+            width: min(100vw, 100vh / 1.414);
+            height: width * 1.414;
+
+
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 1vh 2vw;
+
+            justify-content: space-between;
+        }
+
+        .info_container {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info_container_heading_div {
+            border-width: 0;
+            border-style: solid;
+
+            border-bottom-width: 0.3vh;
+            border-bottom-color: lightgray;
+            display: block;
+            flex: 1;
+            margin-bottom: 0.6vh;
+        }
+
+        .info_container_heading_text {
+            font-weight: 500;
+            font-size: 2.5vh;
+        }
+
+        .info_container_data_div {
+            margin-left: 1vw;
+
+            height: 150px;
+            background-color: aquamarine;
+            flex: 1;
+
+            /* font-size: min(7vw, 65%);  */
+            font-size: 65%;
+        }
+
+        .heading_div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title_name_div {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .title_name {
+            font-size: 3vh;
+            color: black;
+        }
+
+        .contact_details_div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 1.8vh;
+
+
+            border-width: 0;
+            border-style: solid;
+
+            border-top-width: 0.3vh;
+            padding-top: 0.2vh;
+            border-top-color: lightgray;
+
+            border-bottom-width: 0.3vh;
+            padding-bottom: 0.2vh;
+            border-bottom-color: lightgray;
+        }
+
+        .content_detail_tile {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            /*margin-left: 1vw;*/
+            align-items: center;
+            min-width: 20px;
+        }
+
+        .content_detail_icon {
+            height: 100%;
+            width: 30%;
+        }
+
+        .contact_detail_id {
+            font-size: 70%;
+            margin-left: 3%;
+        }
+
+        .skills_line {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .skill_type {
+            font-weight: bold;
+        }
+
+        .skill_list {
+            flex: 1;
+        }
+
+        .project_main_div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5%;
+        }
+
+        .project_heading_and_timeline {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .project_heading {
+            font-weight: bold;
+        }
+
+        .project_timeline {
+            font-size: 90%;
+        }
+
+        .project_info_list {
+            padding-left: 5%;
+            margin-top: 0.5%;
+        }
+
+        .contributions_main_div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5%;
+        }
+
+        .contributions_heading_and_timeline {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .contributions_heading {
+            font-weight: bold;
+        }
+
+        .contributions_timeline {
+            font-size: 90%;
+        }
+
+        .contributions_info_list {
+            padding-left: 5%;
+            margin-top: 0.5%;
+        }
+
+        .education_main_div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5%;
+        }
+
+        .education_heading_and_timeline {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .education_heading {
+            font-weight: bold;
+        }
+
+        .education_timeline {
+            font-size: 90%;
+        }
+
+        .education_info_list {
+            padding-left: 5%;
+            margin-top: 0.5%;
+        }
+
+        /*
+                <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Generic</p>
+            </div>
+            <div class="info_container_data_div">
+
+            </div>
+        </div>
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div class="resume_div">
+
+        <div class="heading_div">
+            <div class="title_name_div">
+                <p class="title_name">Mohan Lal Deep</p>
+            </div>
+            <div class="contact_details_div">
+
+
+                <div class="content_detail_tile">
+
+                    <img class="content_detail_icon" src="icons/phone.svg">
+
+                    <div class="content-detail-info">
+                        <p class="contact_detail_id">MohanGitHub</p>
+                    </div>
+                </div>
+
+                <div class="content_detail_tile">
+
+                    <img class="content_detail_icon" src="icons/envelope.svg">
+
+                    <div class="content-detail-info">
+                        <p class="contact_detail_id">MohanGitHub</p>
+                    </div>
+                </div>
+
+                <div class="content_detail_tile">
+
+                    <img class="content_detail_icon" src="icons/linkedin.svg">
+
+                    <div class="content-detail-info">
+                        <p class="contact_detail_id">MohanGitHub</p>
+                    </div>
+                </div>
+
+                <div class="content_detail_tile">
+
+                    <img class="content_detail_icon" src="icons/github.svg">
+
+                    <div class="content-detail-info">
+                        <p class="contact_detail_id">MohanGitHub</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Summary</p>
+            </div>
+            <div class="info_container_data_div">
+                Results-driven cloud and DevOps engineer with hands-on experience in AWS, containerization, and
+                automation tools. Adept
+                at designing scalable systems, optimizing workflows, and driving business results with innovative cloud
+                solutions.
+            </div>
+        </div>
+
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Skills</p>
+            </div>
+            <div class="info_container_data_div">
+                <div class="skills_line">
+                    <p class="skill_type">DevOps and Tools : </p>
+                    <p class="skill_list">Docker</p>
+                </div>
+                <div class="skills_line">
+                    <p class="skill_type">DevOps and Tools : </p>
+                    <p class="skill_list">Docker</p>
+                </div>
+            </div>
+        </div>
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Projects</p>
+            </div>
+            <div class="info_container_data_div">
+
+
+                <div class="project_main_div">
+                    <div class="project_heading_and_timeline">
+                        <p class="project_heading">Project heading</p>
+                        <p class="project_timeline">May 2025 - April 2026</p>
+                    </div>
+                    <div class="project_info">
+                        <ul class="project_info_list">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>one</li>
+                            <li>two</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project_main_div">
+                    <div class="project_heading_and_timeline">
+                        <p class="project_heading">Project heading</p>
+                        <p class="project_timeline">May 2025 - April 2026</p>
+                    </div>
+                    <div class="project_info">
+                        <ul class="project_info_list">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>one</li>
+                            <li>two</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Open Source Contributions</p>
+            </div>
+            <div class="info_container_data_div">
+
+                <div class="contributions_main_div">
+                    <div class="contributions_heading_and_timeline">
+                        <p class="contributions_heading">contributions heading</p>
+                        <p class="contributions_timeline">May 2025 - April 2026</p>
+                    </div>
+                    <div class="contributions_info">
+                        <ul class="contributions_info_list">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>one</li>
+                            <li>two</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contributions_main_div">
+                    <div class="contributions_heading_and_timeline">
+                        <p class="contributions_heading">contributions heading</p>
+                        <p class="contributions_timeline">May 2025 - April 2026</p>
+                    </div>
+                    <div class="contributions_info">
+                        <ul class="contributions_info_list">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>one</li>
+                            <li>two</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Certifications</p>
+            </div>
+            <div class="info_container_data_div">
+                <p>AWS SSA</p>
+            </div>
+        </div>
+
+
+        <div class="info_container">
+            <div class="info_container_heading_div">
+                <p class="info_container_heading_text">Education</p>
+            </div>
+            <div class="info_container_data_div">
+                <div class="education_main_div">
+                    <div class="education_heading_and_timeline">
+                        <p class="education_heading">education heading</p>
+                        <p class="education_timeline">May 2025 - April 2026</p>
+                    </div>
+                    <div class="education_info">
+                        <p>info</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
