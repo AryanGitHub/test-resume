@@ -32,7 +32,7 @@
             top: 0;
             bottom: 0;
 
-            aspect-ratio: 1/1.4142;
+            /*aspect-ratio: 1/1.4142;*/
 
 
             width: min(100vw, 100vh / 1.414);
@@ -83,12 +83,23 @@
             font-size: 60%;
         }
 
-        @media (max-width: 380px) and (max-height:691px) {
+        @media (max-width: 380px) and (max-height:691px) {  /* for small devices*/
             .info_container_data_div {
             font-size: 55%;
             
             }
         }
+
+        /* @media (min-width: 750px) and (min-height:800px) {  
+        // for large devices like tabs, not working good enough
+            .info_container_data_div {
+            background-color: blue;
+            font-size: 80%;
+            }
+            .info_container_heading_text {
+            font-size: 150%;
+        }
+        } */
 
         .heading_div {
             display: flex;
@@ -139,7 +150,6 @@
 
         .content_detail_icon {
             height: 100%;
-            width: 30%;
         }
 
         .contact_detail_id {
